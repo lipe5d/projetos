@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css"  media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Aluno</h1>
+        <p id="subtitulo">Complete suas Informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="Nome" id="Nome" required> 
+            </div>
+
+            <div class="campo">
+                <label for="Sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>    
+        
+        <div class="campo">
+            <label for="espequitativa"><strong>Qual sua espequitativa do curso ?</strong></label>
+
+            <label>
+                <input type="radio" name="espequitativa" value="rico" checked> Ficar Rico
+            </label>
+            <label> 
+                <input type="radio" name="espequitativa" value="rp"> Ganhar RP de Graça        
+            </label>
+            <label>
+                <input type="radio" name="espequitativa" value="aprender"> Aprender coisas novas
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="conhecer"><strong>Como ficou sabendo do curso ?</strong></label>
+            <select id="conhecer">
+                <option selected disabled value="">Selecione</option>
+                <option>Amigos</option>
+                <option>resvista</option>
+                <option>Carta</option>
+                <option>jogando LOL</option>
+                <option>Site Porno</option>
+            </select>
+        </div> 
+        
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que utiliza ?</strong></label><br><br> 
+                <input type="checkbox" id="tec1" name="tec1" value="Word">
+                <label for="tec1">Word</label>
+                <input type="checkbox" id="tec2" name="tec2" value="power Point">
+                <label for="tec2">Power Point</label>
+                <input type="checkbox" id="tec3" name="tec3" value="Excel">
+                <label for="tec3">Excel</label>
+                <input type="checkbox" id="tec4" name="tec4" value="Visual Studio">
+                <label for="tec4">Visual Studio</label>
+                <input type="checkbox" id="tec5" name="tec5" value="Legue of Legends">
+                <label for="tec5">Legue Of Legends</label>
+            </div>
+        </fieldset>
+
+        <div Class="campo">
+            <br>
+            <label><strong>O que você gostaria de aprender no curso?</strong></label>
+            <textarea row="6" style="width: 26em" id="gostaria" name="gostaria"></textarea>
+        </div>
+
+        <button class="botao" type="submit"><strong>Concluido</strong></button>
+    </form>
+</body>
+</html>
